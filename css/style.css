@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	background-color: #8a496b;
+	min-height: 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.logo{
+	margin: 10px;
+	height: 80px;
+}
+.menu li{
+	color: #fff;
+	display: inline-block;
+}
+.menu li .btn:hover{
+	color: #c0a000;
+}
+.btn{
+	display: block;
+	background-color: #8a496b;
+	color: #fff;
+	border-radius: 32px;
+	padding: 15px;
+	text-decoration: none;
+	margin: 0 auto;
+}
+.banner__wrap, .about__wrap, .services__wrap, .contacts__wrap, .order__wrap{
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 30px 15px 30px 15px;
+}
+.banner__offer, .offer{
+	max-width: 590px;
+	border-radius: 32px;
+	padding: 70px 0 80px 0;
+}
+.offer{
+	color: #8a496b;
+	text-align: center;
+	background-color: rgba(255, 255, 255, .85);
+}
+.offer__title{
+	margin-bottom: 15px;
+}
+.offer__subtitle{
+	margin-bottom: 40px;
+	font-weight: 400;
+}
+.offer__btn{
+	width: 80%;
+	max-width: 400px;
+}
+.offer__btn:hover{
+	background-color: #c0a000;
+}
+.banner__social, .social{
+	margin-top: 20px;
+}
+.social{
+	display: flex;
+	justify-content: center;
+}
+.social__btn img{
+	width: 50px;
+	height: 50px;
+}
+.social__btn:not(:first-child){
+	margin-left: 10px;
+}
+.banner{
+	background-image: url(../img/pic1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+}
+.about__wrap, .services__wrap, .order__wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.__title{
+	border-bottom: 3px solid #8a496b;
+}
+.about__description p{
+	margin-top: 10px;
+}
+.about__masters{
+	display: flex;
+}
+.about__masters p{
+	padding: 5px;
+	text-align: center;
+	font-size: 15px;
+}
+.leftimg {
+    float:left;
+    margin: 7px;
+    width: 150px;
+	border-radius: 50%;
+}
+#services{
+	background-color: #e1bbcf;
+}
+.servic__wrap{
+	margin-top: 20px;
+}
+.servic{
+	background-color: #fff;
+	border-radius: 32px;
+	padding: 15px;
+	margin: 10px;
+	width: 300px;
+	height: 420px;
+	position: relative;
+}
+.servic img{
+	width: 270px;
+}
+.price{
+	position: absolute;
+	bottom: 10px;
+}
+.box{
+	text-align: center;
+}
+.box select, .box input[type = "text"], .box input[type = "email"] {
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px;
+	background: none;
+	border: 2px solid #8a496b;
+	border-radius: 24px;
+	outline: none;
+}
+.box input[type = 'submit']{
+	width: 60%;
+	margin-top: 10px;
+	padding: 5px;
+	background: #8a496b;
+	border-radius: 24px;
+	outline: none;
+	color: #fff;
+}
+.box input[type = 'submit']:hover{
+	background: #c0a000;
+	cursor: pointer;
+}
+footer{
+	background-color: #8a496b;
+	color: #fff;
+	text-align: center;
+}
+footer div{
+	padding: 10px 0 10px 0;
+}
+footer div p{
+	margin-top: 10px;
+}
+
+
+
+@media(min-width: 540px){
+	.offer__title{
+		font-size: 32px;
+	}
+	.offer__subtitle{
+		font-size: 28px;
+	}
+	
+}
+@media(min-width: 720px){
+	.offer__title{
+		font-size: 44px;
+	}
+	.offer__subtitle{
+		font-size: 32px;
+	}
+	a.offer__btn{
+		font-size: 24px;
+	}
+	.social{
+		justify-content: end;
+	}
+	.__title{
+		font-size: 32px;
+	}
+	.about__description p{
+		font-size: 20px;
+	}
+	.about__masters{
+		margin-top: 20px;
+	}
+	.servic__wrap{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+	.contacts__wrap div p{
+		margin-top: 15px;
+		font-size: 20px;
+	}
+	.contacts__wrap div{
+		margin-bottom: 20px;
+	}
+	.box select, .box input[type = "text"], .box input[type = "email"], .box input[type = 'submit']{
+		margin-top: 30px;
+		font-size: 20px;
+	}
+	form{
+		width: 660px;
+	}
+}
+@media(min-width: 960px){
+	.wrap{
+		padding-top: 50px;
+		padding-bottom: 15px;
+	}
+	.banner__social.social{
+		margin-top: 90px;
+	}
+	.banner{
+		background-position: 0 0;
+	}
+	.__title{
+		font-size: 44px;
+	}
+	.servic__wrap{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 15px;
+	}
+	.contacts__wrap{
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 15px;
+	}
+	.contacts__wrap div p{
+		margin-top: 20px;
+	}
+	.contacts__wrap div{
+		margin-bottom: 50px;
+	}
+	.box select, .box input[type = "text"], .box input[type = "email"], .box input[type = 'submit']{
+		margin-top: 40px;
+	}
+	form{
+		width: 720px;
+	}
+}
